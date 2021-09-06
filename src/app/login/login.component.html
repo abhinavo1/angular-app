@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+    <span class="fill-remaining-space">Verizon VNFD Form</span>
+  </mat-toolbar>
+  
+<div class="col-sm-3" > 
+     <mat-form-field class="form-element">
+        <input matInput placeholder="OPERATOR_DATA.CNF_QUERY_WF_NAME" [(ngModel)]="firmware['VNF:GENERIC:VNF-0']['OPERATOR_DATA.CNF_QUERY_WF_NAME']">       
+      </mat-form-field>
+    </div>
+
+      <div><mat-form-field class="form-element">
+        <input matInput placeholder="OPERATOR_DATA.CNF_QUERY_WF_NAME" [(ngModel)]="firmware['VNF:GENERIC:VNF-0']['OPERATOR_DATA.VNF_OPERATOR_METADATA']">       
+      </mat-form-field>
+      </div>
+      <div>
+      <mat-form-field class="form-element">
+        <input matInput placeholder="CONFIG.Encrypted_Files" [(ngModel)]="firmware['VNF:GENERIC:VNF-0']['CONFIG.Encrypted_Files']">       
+      </mat-form-field>
+      </div>
+      <div>
+      <mat-form-field class="form-element">
+        <input matInput placeholder="CONFIG.Files" [(ngModel)]="firmware['VNF:GENERIC:VNF-0']['CONFIG.Files']">       
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="form-element">
+        <input matInput placeholder="GENERAL.ACTUAL_LEVEL" [(ngModel)]="firmware['VNF:GENERIC:VNF-0']['GENERAL.ACTUAL_LEVEL']">       
+      </mat-form-field> 
+      </div> 
+      <button (click)="callMe()">Submit</button>
+    
+
+

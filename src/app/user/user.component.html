@@ -1,0 +1,12 @@
+<div>
+    <img src="./../../assets/images/logo.png" alt="logo"  height="70px" width="70px" padding-left:66px/> <h1 class="titletag"> FE Firmware Service </h1> </div>
+          <hr size="8" width="1500" color="red">
+          <div  class="loader-container" id="loader-container" style="display:none"><img src="/src/assets/images/loader.gif"/></div>
+          <div align="center" id="mainblock" >
+              <h1> Fetch Firmware Version </h1> <br/>
+              <font size="+1"> Enter IP Address: </font><input type="text" id="ipaddr" class="inam-input-text" [(ngModel)]="ipaddr" /> <br/> <br/>
+              <button name="submit" (click)="loadDoc()" class="vzbutton">Submit</button>
+              <font size="+1"> <p id="pingstatus" ></p> </font>
+              <font size="+1"> <p id="firmwareresult"> </p> </font>
+          </div>
+  
